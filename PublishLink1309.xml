@@ -1,0 +1,43 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" />
+    <SOAP-ENV:Body xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+        <wor:PublishProductRequest xmlns:wor="http://uicds.org/WorkProductService">
+            <wor:incidentId>IG-c0c90785-b0b9-4847-bc16-1b92b403822d</wor:incidentId>
+            <str:WorkProduct xmlns:str="http://www.saic.com/precis/2009/06/structures">
+                <ulex:PackageMetadata xmlns:ulex="ulex:message:structure:1.0">
+                    <ulex:DataOwnerMetadata>
+                        <ulex:DataOwnerIdentifierAbstract>
+                            <ns:Organization xmlns:ns="http://metadata.dod.mil/mdr/ns/DDMS/2.0/">
+                                <ns:name>MATADRR C4IS</ns:name>
+                            </ns:Organization>
+                        </ulex:DataOwnerIdentifierAbstract>
+                        <ulex:DataOwnerContactAbstract>
+                            <ns:ContactInstantMessenger xmlns:ns="http://niem.gov/niem/niem-core/2.0" />
+                            <ns:OrganizationName xmlns:ns="http://niem.gov/niem/niem-core/2.0">MATADRR C4IS
+                            </ns:OrganizationName>
+                        </ulex:DataOwnerContactAbstract>
+                    </ulex:DataOwnerMetadata>
+                    <ulex:DisseminationCriteriaAbstract>
+                        <ns:DisseminationCriteria xmlns:ns="http://ucore.gov/ucore/2.0" />
+                    </ulex:DisseminationCriteriaAbstract>
+                </ulex:PackageMetadata>
+                <ulex:StructuredPayload base:label="Plume Info"
+                    xmlns:ulex="ulex:message:structure:1.0" xmlns:base="http://www.saic.com/precis/2009/06/base">
+                    <ulex:StructuredPayloadMetadata>
+                        <ulex:CommunityURI>Link</ulex:CommunityURI>
+                        <ulex:CommunityVersion>c4is_matadrr-svr06</ulex:CommunityVersion>
+                    </ulex:StructuredPayloadMetadata>
+                    <link:Protocol xmlns:link="http://www.saic.com/precis/2009/06/payloads/link">http</link:Protocol>
+                    <link:Address xmlns:link="http://www.saic.com/precis/2009/06/payloads/link">address7</link:Address>
+                </ulex:StructuredPayload>
+                <ucore:Digest xmlns:ucore="http://ucore.gov/ucore/2.0">
+                    <ucore:Event id="c4is_matadrr-svr06">
+                        <ucore:Descriptor>http://ifuicds-test1.picahld.net/ft_belvoir_explosion_plume_int2.kml
+                        </ucore:Descriptor>
+                    </ucore:Event>
+                </ucore:Digest>
+            </str:WorkProduct>
+        </wor:PublishProductRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

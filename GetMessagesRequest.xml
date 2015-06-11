@@ -1,0 +1,10 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"/>
+  <SOAP-ENV:Body xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsn:GetMessagesRequest xmlns:wsn="http://uicds.org/NotificationService"
+                              xmlns:wsa="http://www.w3.org/2005/08/addressing">
+	        <wsn:MaximumNumber xmlns:wsn="http://uicds.org/NotificationService">1</wsn:MaximumNumber>
+	        <wsa:To xmlns:wsa="http://www.w3.org/2005/08/addressing">https://clash.saic.com/uicds/core/ws/services/SuperIncidentManagementApplication</wsa:To>
+      </wsn:GetMessagesRequest>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

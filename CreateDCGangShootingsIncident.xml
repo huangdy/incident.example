@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<CreateIncidentRequest NS1:schemaLocation="http://uicds.org/IncidentManagementService services\IncidentManagement\0.1\IncidentManagementService.xsd" xmlns="http://uicds.org/IncidentManagementService" xmlns:NS1="http://www.w3.org/2001/XMLSchema-instance">
+			<inc:Incident xmlns:inc="http://uicds.org/incident">
+				<ActivityCategoryText xmlns="http://niem.gov/niem/niem-core/2.0">Shooting</ActivityCategoryText>
+				<ActivityDate xmlns="http://niem.gov/niem/niem-core/2.0">
+					<DateTime>2009-11-20T12:05:00</DateTime>
+				</ActivityDate>
+				<ActivityDescriptionText xmlns="http://niem.gov/niem/niem-core/2.0">Gang shooting at Dunkin Donuts</ActivityDescriptionText>
+				<ActivityName xmlns="http://niem.gov/niem/niem-core/2.0">Shooting at Donut Shop (Demo)</ActivityName>
+				<IncidentLocation xmlns="http://niem.gov/niem/niem-core/2.0">
+					<LocationAddress>
+						<AddressFullText>801 Pennsylvania Avenue, Southeast, Washington, DC</AddressFullText>
+					</LocationAddress>
+					<LocationArea>
+						<AreaCircularRegion>
+							<CircularRegionCenterCoordinate>
+								<GeographicCoordinateLatitude>
+									<LatitudeDegreeValue>38</LatitudeDegreeValue>
+									<LatitudeMinuteValue>53</LatitudeMinuteValue>
+									<LatitudeSecondValue>01.22</LatitudeSecondValue>
+								</GeographicCoordinateLatitude>
+								<GeographicCoordinateLongitude>
+									<LongitudeDegreeValue>-76</LongitudeDegreeValue>
+									<LongitudeMinuteValue>59</LongitudeMinuteValue>
+									<LongitudeSecondValue>41.33</LongitudeSecondValue>
+								</GeographicCoordinateLongitude>
+							</CircularRegionCenterCoordinate>
+							<CircularRegionRadiusLengthMeasure>
+								<MeasurePointValue>4.5</MeasurePointValue>
+								<LengthUnitCode>SMI</LengthUnitCode>
+							</CircularRegionRadiusLengthMeasure>
+						</AreaCircularRegion>
+					</LocationArea>
+				</IncidentLocation>
+				<IncidentJurisdictionalOrganization xmlns="http://niem.gov/niem/niem-core/2.0">
+					<OrganizationName>DC Police</OrganizationName>
+					<OrganizationPrincipalOfficial>
+						<PersonName>
+							<PersonFullName>Lt. Douglas</PersonFullName>
+						</PersonName>
+					</OrganizationPrincipalOfficial>
+					<OrganizationStatus>
+						<StatusDescriptionText>Activated</StatusDescriptionText>
+					</OrganizationStatus>
+				</IncidentJurisdictionalOrganization>
+			</inc:Incident>
+		</CreateIncidentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

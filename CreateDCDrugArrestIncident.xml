@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header/>
+	<SOAP-ENV:Body>
+		<CreateIncidentRequest NS1:schemaLocation="http://uicds.org/IncidentManagementService services\IncidentManagement\0.1\IncidentManagementService.xsd" xmlns="http://uicds.org/IncidentManagementService" xmlns:NS1="http://www.w3.org/2001/XMLSchema-instance">
+			<inc:Incident xmlns:inc="http://uicds.org/incident">
+				<ActivityCategoryText xmlns="http://niem.gov/niem/niem-core/2.0">Event</ActivityCategoryText>
+				<ActivityDate xmlns="http://niem.gov/niem/niem-core/2.0">
+					<DateTime>2009-11-20T12:05:00</DateTime>
+				</ActivityDate>
+				<ActivityDescriptionText xmlns="http://niem.gov/niem/niem-core/2.0">Drug arrest of three juveniles (Demo)</ActivityDescriptionText>
+				<ActivityName xmlns="http://niem.gov/niem/niem-core/2.0">Drug Arrest (Demo)</ActivityName>
+				<IncidentLocation xmlns="http://niem.gov/niem/niem-core/2.0">
+					<LocationAddress>
+						<AddressFullText>1746 Lanier Place Northwest, Washington, DC</AddressFullText>
+					</LocationAddress>
+					<LocationArea>
+						<AreaCircularRegion>
+							<CircularRegionCenterCoordinate>
+								<GeographicCoordinateLatitude>
+									<LatitudeDegreeValue>38</LatitudeDegreeValue>
+									<LatitudeMinuteValue>55</LatitudeMinuteValue>
+									<LatitudeSecondValue>27.02</LatitudeSecondValue>
+								</GeographicCoordinateLatitude>
+								<GeographicCoordinateLongitude>
+									<LongitudeDegreeValue>-77</LongitudeDegreeValue>
+									<LongitudeMinuteValue>02</LongitudeMinuteValue>
+									<LongitudeSecondValue>23.56</LongitudeSecondValue>
+								</GeographicCoordinateLongitude>
+							</CircularRegionCenterCoordinate>
+							<CircularRegionRadiusLengthMeasure>
+								<MeasurePointValue>4.5</MeasurePointValue>
+								<LengthUnitCode>SMI</LengthUnitCode>
+							</CircularRegionRadiusLengthMeasure>
+						</AreaCircularRegion>
+					</LocationArea>
+				</IncidentLocation>
+				<IncidentJurisdictionalOrganization xmlns="http://niem.gov/niem/niem-core/2.0">
+					<OrganizationName>DC Police</OrganizationName>
+					<OrganizationPrincipalOfficial>
+						<PersonName>
+							<PersonFullName>Det. Billson</PersonFullName>
+						</PersonName>
+					</OrganizationPrincipalOfficial>
+					<OrganizationStatus>
+						<StatusDescriptionText>Activated</StatusDescriptionText>
+					</OrganizationStatus>
+				</IncidentJurisdictionalOrganization>
+			</inc:Incident>
+		</CreateIncidentRequest>
+	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

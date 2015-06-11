@@ -1,0 +1,76 @@
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header/>
+    <SOAP-ENV:Body>
+        <wp:PublishProductRequest xsi:schemaLocation="http://uicds.org/WorkProductService" 
+            xmlns:ddms="http://metadata.dod.mil/mdr/ns/DDMS/2.0/"
+            xmlns:ucore="http://ucore.gov/ucore/2.0"
+            xmlns:wp="http://uicds.org/WorkProductService"
+            xmlns:gml="http://www.opengis.net/gml/3.2" 
+            xmlns:precisb="http://www.saic.com/precis/2009/06/base"
+            xmlns:preciss="http://www.saic.com/precis/2009/06/structures"
+            xmlns:precisp="http://www.saic.com/precis/2009/06/payloads"
+            xmlns:ulexlib="ulex:message:library:1.0"
+            xmlns:ulex="ulex:message:structure:1.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <preciss:WorkProduct>
+                <ulex:PackageMetadata>
+                    <!-- These are required by the spec, but will be rewritten by the server once submitted -->
+                    <ulex:DataItemID>DataItemID Required</ulex:DataItemID>
+                    <ulex:DataItemReferenceID xsi:nil="true"/>
+                    <ucore:DataItemStatus ucore:label="Active"/>
+                    
+                    <!-- This block is required by the spec but can be left as empty elements -->
+                    <ulex:DataOwnerMetadata>
+                        <ucore:DataOwnerIdentifier>
+                            <ddms:Organization>
+                                <ddms:name/>
+                            </ddms:Organization>
+                        </ucore:DataOwnerIdentifier>
+                        <ucore:DataOwnerContact>
+                            <ddms:Organization>
+                                <ddms:name/>
+                            </ddms:Organization>
+                        </ucore:DataOwnerContact>
+                    </ulex:DataOwnerMetadata>
+                    <ucore:DisseminationCriteria/>
+                    
+                    <!-- product type is Link -->
+                    <preciss:WorkProductIdentification>
+                        <precisb:Type>Link</precisb:Type>
+                    </preciss:WorkProductIdentification>
+                    
+                    <!-- if you want to associate the WP with an incident, do it here (dont forget to change the interest group ID!) -->
+                    <preciss:WorkProductProperties>
+                        <base:AssociatedGroups xmlns:base="http://www.saic.com/precis/2009/06/base">
+                            <base:Identifier>IG-4e2620c0-d4b7-468f-affb-6f2fc7fff5d8</base:Identifier>
+                        </base:AssociatedGroups>
+                    </preciss:WorkProductProperties>
+                    
+                </ulex:PackageMetadata>
+                <ucore:Digest>
+                    <ucore:DigestMetadata/>
+                    
+                    <!-- Providing a digest with an entity ensures that the object is available to the search subsystem (and kml renderer)-->
+                    <ucore:Event id="Entity001">
+                        <!-- The link goes in the description.  You can use html snippets, but remember to escape character entities -->
+                        <ucore:Descriptor>&lt;a href=http://ifuicds-test1.picahld.net/plume2.kml&quot;&quot; &gt;CLICK ME!&lt;/a&gt;</ucore:Descriptor>
+                        <ucore:What ucore:code="Equipment" ucore:codespace="http://ucore.gov/ucore/2.0/codespace/"/>
+                    </ucore:Event>
+                    
+                </ucore:Digest>
+               <ulex:StructuredPayload base:label="/ChlorineSpillNorfolk.kml - IP2_ifdevrh03"
+					xmlns:ulex="ulex:message:structure:1.0" xmlns:base="http://www.saic.com/precis/2009/06/base">
+					<ulex:StructuredPayloadMetadata>
+						<ulex:CommunityURI>Link</ulex:CommunityURI>
+						<ulex:CommunityVersion>IP2_ifdevrh03</ulex:CommunityVersion>
+					</ulex:StructuredPayloadMetadata>
+					<link:Protocol xmlns:link="http://www.saic.com/precis/2009/06/payloads/link">http</link:Protocol>
+					<link:Address xmlns:link="http://www.saic.com/precis/2009/06/payloads/link">http://ifuicds-test1.picahld.net/plume2.kml
+					</link:Address>
+				</ulex:StructuredPayload> 
+            </preciss:WorkProduct>
+        </wp:PublishProductRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

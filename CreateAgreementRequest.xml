@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" />
+    <soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <CreateAgreementRequest xmlns="http://uicds.org/AgreementService"
+            xmlns:precisb="http://www.saic.com/precis/2009/06/base" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://uicds.org/AgreementService ../../com.saic.uicds.core.infrastructure.xmlbeans-infrastructure/src/main/xsd/services/Agreement/0.1/AgreementService.xsd ">
+            <Agreement>
+                <Principals>
+                    <LocalCore>xchangecore@2kd71j1.xchangecore.dom?ids=admin</LocalCore>
+                    <RemoteCore>xchangecore@2kd71j1.xchangecore.dom?ids=user_abc</RemoteCore>
+                </Principals>
+                <ShareRules enabled="true" />
+            </Agreement>
+        </CreateAgreementRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

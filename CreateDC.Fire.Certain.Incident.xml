@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <CreateIncidentRequest
+            NS1:schemaLocation="http://uicds.org/IncidentManagementService services\IncidentManagement\0.1\IncidentManagementService.xsd"
+            xmlns="http://uicds.org/IncidentManagementService" xmlns:NS1="http://www.w3.org/2001/XMLSchema-instance">
+            <inc:Incident xmlns:inc="http://uicds.org/incident">
+                <ActivityCategoryText xmlns="http://niem.gov/niem/niem-core/2.0">Fire</ActivityCategoryText>
+                <ActivityDate xmlns="http://niem.gov/niem/niem-core/2.0">
+                    <DateTime>2009-11-20T12:05:00</DateTime>
+                </ActivityDate>
+                <ActivityDescriptionText xmlns="http://niem.gov/niem/niem-core/2.0">Apartment building in on
+                    fire, multiple floors fully involved, partial building collapse
+                </ActivityDescriptionText>
+                <ActivityName xmlns="http://niem.gov/niem/niem-core/2.0">Apartment Building Fire (Demo)</ActivityName>
+                <IncidentLocation xmlns="http://niem.gov/niem/niem-core/2.0">
+                    <LocationAddress>
+                        <AddressFullText>2300 Good Hope Road Southeast, Washington, DC
+                        </AddressFullText>
+                    </LocationAddress>
+                    <LocationArea>
+                        <AreaCircularRegion>
+                            <CircularRegionCenterCoordinate>
+                                <GeographicCoordinateLatitude>
+                                    <LatitudeDegreeValue>38</LatitudeDegreeValue>
+                                    <LatitudeMinuteValue>51</LatitudeMinuteValue>
+                                    <LatitudeSecondValue>54.18</LatitudeSecondValue>
+                                </GeographicCoordinateLatitude>
+                                <GeographicCoordinateLongitude>
+                                    <LongitudeDegreeValue>-76</LongitudeDegreeValue>
+                                    <LongitudeMinuteValue>58</LongitudeMinuteValue>
+                                    <LongitudeSecondValue>26.55</LongitudeSecondValue>
+                                </GeographicCoordinateLongitude>
+                            </CircularRegionCenterCoordinate>
+                            <CircularRegionRadiusLengthMeasure>
+                                <MeasurePointValue>4.5</MeasurePointValue>
+                                <LengthUnitCode>SMI</LengthUnitCode>
+                            </CircularRegionRadiusLengthMeasure>
+                        </AreaCircularRegion>
+                    </LocationArea>
+                </IncidentLocation>
+                <IncidentJurisdictionalOrganization xmlns="http://niem.gov/niem/niem-core/2.0">
+                    <OrganizationName>Richmond Fire Department</OrganizationName>
+                    <OrganizationPrincipalOfficial>
+                        <PersonName>
+                            <PersonFullName>ICS Commander</PersonFullName>
+                        </PersonName>
+                    </OrganizationPrincipalOfficial>
+                    <OrganizationStatus>
+                        <StatusDescriptionText>Activated</StatusDescriptionText>
+                    </OrganizationStatus>
+                </IncidentJurisdictionalOrganization>
+                <inc:ExtendedMetadata xmlns:inc="http://uicds.org/IncidentManagementService"
+                    codespace="urn:oasis:names:tc:emergency:cap:1.2" code="Certainty" label="Certainty">Certain
+                </inc:ExtendedMetadata>
+            </inc:Incident>
+        </CreateIncidentRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

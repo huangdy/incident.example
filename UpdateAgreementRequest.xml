@@ -1,0 +1,18 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" />
+    <soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <UpdateAgreementRequest xmlns="http://uicds.org/AgreementService"
+            xmlns:precisb="http://www.saic.com/precis/2009/06/base" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://uicds.org/AgreementService ../../com.saic.uicds.core.infrastructure.xmlbeans-infrastructure/src/main/xsd/services/Agreement/0.1/AgreementService.xsd ">
+            <Agreement>
+                <id>1118</id>
+                <description>Agreement is from gv56bz1.corp.leidos.com to huangda-win7.uicds.dom</description>
+                <Principals>
+                    <LocalCore>uicds@gv56bz1.corp.leidos.com</LocalCore>
+                    <RemoteCore>uicds@huangda-win7.uicds.dom</RemoteCore>
+                </Principals>
+                <ShareRules enabled="true" />
+            </Agreement>
+        </UpdateAgreementRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

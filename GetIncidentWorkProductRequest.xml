@@ -1,0 +1,16 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <wp:GetProductRequest xmlns:precisb="http://www.saic.com/precis/2009/06/base"
+            xmlns:preciss="http://www.saic.com/precis/2009/06/structures" xmlns:wp="http://uicds.org/WorkProductService">
+            <preciss:WorkProductIdentification>
+                <precisb:Identifier xmlns:base="http://www.saic.com/precis/2009/06/base">Incident-abb882b4-e3ee-45db-99fe-07750399576e</precisb:Identifier>
+                <precisb:Version xmlns:base="http://www.saic.com/precis/2009/06/base">2</precisb:Version>
+                <precisb:Type xmlns:base="http://www.saic.com/precis/2009/06/base">Incident</precisb:Type>
+                <precisb:Checksum xmlns:base="http://www.saic.com/precis/2009/06/base">Fri Jan 10 10:53:41 EST 2014:2:2:146120660</precisb:Checksum>
+                <precisb:State xmlns:base="http://www.saic.com/precis/2009/06/base">Active</precisb:State>
+            </preciss:WorkProductIdentification>
+        </wp:GetProductRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+

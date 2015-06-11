@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+    <SOAP-ENV:Header />
+    <SOAP-ENV:Body>
+        <CreateIncidentRequest xmlns="http://uicds.org/IncidentManagementService"
+            xmlns:inc="http://uicds.org/incident" xmlns:ns="http://niem.gov/niem/niem-core/2.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <inc:Incident>
+                <ns:ActivityCategoryText>N/A</ns:ActivityCategoryText>
+                <ns:ActivityDate>
+                    <ns:DateTime>2014-09-18T08:55:53</ns:DateTime>
+                </ns:ActivityDate>
+                <ns:ActivityDescriptionText><![CDATA[&lt;br/&gt;&lt;b&gt;Title: &lt;/b&gt;PG&amp;E Transmission Line&lt;br/&gt;&lt;b&gt;IncidentType: &lt;/b&gt;Downed - live&lt;br/&gt;&lt;b&gt;Description: &lt;/b&gt;DO NOT APPROACH - CALL PGE&lt;br/&gt;&lt;b&gt;Latitude: &lt;/b&gt;37&#65533; 40&apos; 9.071&quot; N&lt;br/&gt;&lt;b&gt;Longitude: &lt;/b&gt;122&#65533; 28&apos; 8.910&quot; W&lt;br/&gt;&lt;b&gt;Date: &lt;/b&gt;10/16/2013&lt;br/&gt;&lt;b&gt;Time: &lt;/b&gt;1152 PDT]]></ns:ActivityDescriptionText>
+                <ns:ActivityName>PG&amp;E - Downed - live</ns:ActivityName>
+                <ns:ActivityStatus>
+                    <ns:StatusDescriptionText>DO NOT APPROACH - CALL PGE</ns:StatusDescriptionText>
+                </ns:ActivityStatus>
+                <ns:IncidentLocation>
+                    <ns:LocationArea>
+                        <ns:AreaCircularDescriptionText>Location: PG&amp;E - Downed - live
+                        </ns:AreaCircularDescriptionText>
+                        <ns:AreaCircularRegion>
+                            <ns:CircularRegionCenterCoordinate>
+                                <ns:GeographicCoordinateLatitude>
+                                    <ns:LatitudeDegreeValue>37</ns:LatitudeDegreeValue>
+                                    <ns:LatitudeMinuteValue>40</ns:LatitudeMinuteValue>
+                                    <ns:LatitudeSecondValue>9.071</ns:LatitudeSecondValue>
+                                </ns:GeographicCoordinateLatitude>
+                                <ns:GeographicCoordinateLongitude>
+                                    <ns:LongitudeDegreeValue>-122</ns:LongitudeDegreeValue>
+                                    <ns:LongitudeMinuteValue>28</ns:LongitudeMinuteValue>
+                                    <ns:LongitudeSecondValue>8.910</ns:LongitudeSecondValue>
+                                </ns:GeographicCoordinateLongitude>
+                            </ns:CircularRegionCenterCoordinate>
+                            <ns:CircularRegionRadiusLengthMeasure>
+                                <ns:MeasurePointValue>1.0</ns:MeasurePointValue>
+                            </ns:CircularRegionRadiusLengthMeasure>
+                        </ns:AreaCircularRegion>
+                    </ns:LocationArea>
+                </ns:IncidentLocation>
+                <ns:IncidentObservationText><![CDATA[[PG&amp;E Transmission Line:Downed - live:DO NOT APPROACH - CALL PGE:37&#65533; 40&apos; 9.071&quot; N:122&#65533; 28&apos; 8.910&quot; W:10/16/2013:1152 PDT]]]></ns:IncidentObservationText>
+            </inc:Incident>
+        </CreateIncidentRequest>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

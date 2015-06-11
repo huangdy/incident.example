@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" />
+    <soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <as:CreateAlertRequest xmlns:as="http://uicds.org/AlertService"
+            xmlns:cap="urn:oasis:names:tc:emergency:cap:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://uicds.org/AlertService ../../final.core/em/xmlbeans-em/src/main/xsd/services/Alert/0.1/AlertService.xsd ">
+            <as:incidentId>IG-366411ba-a8e4-494c-b4b2-86a8d2049d1c</as:incidentId>
+            <cap:alert>
+                <cap:identifier>cap:identifier</cap:identifier>
+                <cap:sender>cap:sender</cap:sender>
+                <cap:sent>2001-12-31T12:00:00</cap:sent>
+                <cap:status>Actual</cap:status>
+                <cap:msgType>Cancel</cap:msgType>
+                <cap:source>cap:source</cap:source>
+                <cap:scope>Public</cap:scope>
+                <cap:restriction>cap:restriction</cap:restriction>
+                <cap:addresses>cap:addresses</cap:addresses>
+                <cap:code>cap:code</cap:code>
+                <cap:note>cap:note</cap:note>
+                <cap:references>BullShit,UICDS-Test-Identifier-1</cap:references>
+                <cap:incidents>cap:incidents</cap:incidents>
+                <cap:info>
+                    <cap:category>Geo</cap:category>
+                    <cap:event>cap:event</cap:event>
+                    <cap:urgency>Immediate</cap:urgency>
+                    <cap:severity>Extreme</cap:severity>
+                    <cap:certainty>Observed</cap:certainty>
+                </cap:info>
+            </cap:alert>
+        </as:CreateAlertRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

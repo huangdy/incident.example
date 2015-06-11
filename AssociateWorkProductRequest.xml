@@ -1,0 +1,9 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"/>
+  <SOAP-ENV:Body xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+      <wp:AssociateWorkProductToInterestGroupRequest xmlns:wp="http://uicds.org/WorkProductService">
+         <wp:WorkProductID xmlns:wp="http://uicds.org/WorkProductService">Alert-72d1659c-ba50-4bc9-983d-2b3a11e25f62</wp:WorkProductID>
+         <wp:IncidentID xmlns:wp="http://uicds.org/WorkProductService">IG-08b3f56c-5a36-4e23-8d94-fb6a83a9c50a</wp:IncidentID>
+      </wp:AssociateWorkProductToInterestGroupRequest>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
