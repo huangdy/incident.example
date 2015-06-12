@@ -1,0 +1,6 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" />
+    <soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+        <GetAgreementListRequest xmlns="http://uicds.org/AgreementService" />
+    </soapenv:Body>
+</soapenv:Envelope>

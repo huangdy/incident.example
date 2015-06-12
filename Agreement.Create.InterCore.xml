@@ -6,8 +6,8 @@
             xsi:schemaLocation="http://uicds.org/AgreementService ../../com.saic.uicds.core.infrastructure.xmlbeans-infrastructure/src/main/xsd/services/Agreement/0.1/AgreementService.xsd ">
             <Agreement>
                 <Principals>
-                    <LocalCore>uicds@gv56bz1.corp.leidos.com?ids=admin&amp;groups=group13</LocalCore>
-                    <RemoteCore>uicds@gv56bz1.corp.leidos.com?ids=user4&amp;groups=group12,group13</RemoteCore>
+                    <LocalCore>gv56bz1-u1504.xchangecore.dom?ids=admin</LocalCore>
+                    <RemoteCore>gv56bz1-u1504.xchangecore.dom?ids=user1</RemoteCore>
                 </Principals>
                 <ShareRules enabled="true" />
             </Agreement>
